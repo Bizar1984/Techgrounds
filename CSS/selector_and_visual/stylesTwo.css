@@ -1,0 +1,31 @@
+.container  {
+    display: flex;
+}
+
+.flex_item {
+    color: white;
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+}
+
+div > h2 {
+    color: orange;
+}
+
+section {
+    border: 1px solid black;
+}
+
+section + h4 {
+    color: darkcyan;
+}
+
+h3 ~ p {
+    background-color: lightskyblue;
+    color: black;
+}
+    
+
+
+    

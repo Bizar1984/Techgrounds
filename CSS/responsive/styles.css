@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    background-color: darkred;
+}
+
+.container {
+    margin-top: 10px;
+    border: 1px solid black;
+    
+}
+
+.col-first {
+    background-color:  #47C96A 
+}
+
+.col-second {
+    background-color: #207036;
+}
+
+.col-third {
+    background-color:#096923;
+}
+
+
+@media(max-width:600px) {
+    .icons {
+        flex-direction: column;
+    }
+    .bootstrap-icon, .chat-icon {
+        margin-bottom: 0.5em;
+    }
+
+}
+
+/* unordered list with icons from lineicons */
+ul {
+    list-style-type: none;
+}
+/* active class */
+
+
+/* header section */
+.headerContainer {
+    background-image: url(./backgroundTwo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    width: 100%;
+    height: 400px;;
+    background-color: grey;
+    border: 1px solid black;
+    
+}
+
+.buttonContainer {
+    padding: 20px;
+    border: 2px solid black;
+    width: 360px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: auto;
+    background-color: rgba(255, 153, 0, 0.87);
+    opacity: 0.95;
+}
+    
+
+/* black text */
+.textblack {
+    color: black;
+}
+
+/* stolen animation */
+.rainbow:hover {
+    background-image: linear-gradient(
+       to right, 
+       #E7484F,
+       #F68B1D, 
+       #FCED00,
+       #009E4F,
+       #00AAC3,
+       #732982
+     );
+   animation:slidebg 2s linear infinite;
+ }
+
+ @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+.morrowImg {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+.pastaText {
+    margin-top: 10px;
+}
+
+.characters {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightslategrey;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+.iconContainer {
+    max-width: 300px;
+}
+
+.somethingElse, .iconContainer {
+    color: white;
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 0px;
+    
+}
+
+.twoIcons {
+    margin-top: 5px;
+}
+
+@media(max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* rows and columns */
+@media (min-width: 800px) {
+    .equal-height-container {
+        display: flex;
+        margin: 20px auto;
+        
+    }
+}
+
+.equal-height-container {
+    background-color: #020105;
+    margin: 20px auto;
+    border: 0.5px solid white;
+    width: 95%;
+    
+}
+
+.first {
+    padding: 5px;
+    flex: 1;
+    
+}
+
+.second {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+
+.second-a {
+    border: 1px solid #4C5775;
+    flex: 1;
+    padding: 5px;
+    background-color: #E4A978
+}
+
+.second-b {
+    border: 1px solid #9A827D;
+    flex: 1;
+    padding: 5px;
+    background-color: #4C5775;
+}
+
+@media(max-width: 600px) {
+    .bear {
+        max-width: 80%;
+    }
+}
+
+
+
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../navigateTop.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Practice</title>
+</head>
+
+<body>
+    
+    <div class="navigationContainer">
+        <div id="navbar" class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn">Homepage
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../index.html">Only if you want to go back home</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Selectors & Visual
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../selector_and_visual/index.html">Selectors & Visual rules opdr 1-4</a>
+                    <a href="../selector_and_visual/indexTwo.html">Selectors & Visual rules opdr 5-8</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Box Model
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../box_model/index.html">Box-model opdr 1-3</a>
+                    <a href="../box_model/indexTwo.html">Box-model opdr 4-7</a>
+                    <a href="../box_model/indexThree.html">Box-model opdr 8-9</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Display & Positioning
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../display_positioning/index.html">Display & positioning opdr 1-4</a>
+                    <a href="../display_positioning/indexTwo.html">Display & positioning opdr 5-8</a>
+
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Pseudo-Elements
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../pseudo_elements/index.html">Pseudo elements opdr 1-3</a>
+                    <a href="../pseudo_elements/indexTwo.html">Pseudo elements opdr 4-7</a>
+                </div>
+            </div>
+
+            <!-- this is my directory -->
+            <div class="dropdown">
+                <button class="dropbtn">Flexbox
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Flexbox opdr 1-3</a>
+                    <a href="indexTwo.html">Flexbox opdr 4-7</a>
+                    <a href="indexThree.html">Flexbox opdr 8-10</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Transitions
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../transitions/index.html">Transitions opdr 1-3</a>
+                    <a href="../transitions/indexTwo.html">Transitions opdr 4-7</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Responsive
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../responsive/index.html">Final Chapter</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of navigation menu -->
+
+    <!-- time for some flexing -->
+    <div class="container">
+        <form action="">
+            <div class="form-row">
+                <label for="exercise">Exercise:</label>
+                <input type="text" id="exercise" placeholder="Flexbox">
+            </div>
+            <div class="form-row">
+                <label for="level">Level:</label>
+                <input type="text" id="level" placeholder="Novice">
+            </div>
+        </form>
+    </div>
+
+    <!-- three column layout -->
+    <div class="column-layout">
+        <div class="main-column">
+            <h3>Main Column </h3> 
+            <p>Some text for the main column</p>
+            <p>Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Nulla nec erat 
+            sed justo consectetur suscipit.</p>
+            <p>Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Nulla nec erat 
+            sed justo consectetur suscipit.Proin in enim eu justo 
+            tempus malesuada. Sed sodales purus.</p>  
+        </div>
+
+        <div class="sidebar-one">
+            <h3>Sidebar One</h3>
+            <p>Some text for the first sidebar</p>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Nulla nec erat 
+                sed justo consectetur suscipit.</p> 
+            <p>Proin in enim eu justo tempus malesuada. Sed sodales purus.
+            </p> 
+        </div>
+
+        <div class="sidebar-two">
+            <h3>Sidebar Two</h3>
+            <p>Some text for the second sidebar</p>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Nulla nec erat 
+                sed justo consectetur suscipit.</p> 
+            <p>Proin in enim eu justo tempus malesuada. Sed sodales purus.
+            </p> 
+
+            <div class="dropdown">
+                <button class="dropbtn">Responsive
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../responsive/index.html">Responsive opdr 1-3</a>
+                    <a href="../responsive/indexTwo.html">Responsive opdr 4-6</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- three columns with margins in between -->
+    <div class="call-out-container">
+        <div class="call-out">
+            <h4>First Column</h4>
+            <p>Here we can put some text</p>
+            <p>Using the align items property.
+                Setting it to flex-end... Sretch is default 
+                value and gives us equal height columns
+            </p>
+        </div>
+        
+        <div class="call-out">
+            <h4>Second Column</h4>
+            <p>Here we can put some more text. If we assign padding
+                and width it is smart to use box-sizing == border-box.
+                In stead of width we use flex-basis and set it to 30%
+            </p>
+        </div>
+            
+        <div class="call-out">
+            <h4>Third Column</h4>
+            <p>Here we can put some text. The remaining 10% is distributed evenly.
+                Justify content == space-between
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- boxes with fixed sizes, or without fixed sizes. No width -->
+    <h3>Flex-basis set to 7 procent</h3>
+    <p>Justify content to flex-start and flex-wrap to wrap.
+
+    </p>
+    <div class="flex-container-box">
+        <div class="flex-item-box">1</div>
+        <div class="flex-item-box">2</div>
+        <div class="flex-item-box">3</div>
+        <div class="flex-item-box">4</div>
+        <div class="flex-item-box">5</div>
+        <div class="flex-item-box">6</div>
+    </div>
+
+    <h3>Flex-basis set to 7 procent</h3>
+    <p>Justify content to flex-end and flex-wrap to wrap.
+
+    </p>
+    <div class="flex-container-box-two">
+        <div class="flex-item-box">1</div>
+        <div class="flex-item-box">2</div>
+        <div class="flex-item-box">3</div>
+        <div class="flex-item-box">4</div>
+        <div class="flex-item-box">5</div>
+        <div class="flex-item-box">6</div>
+    </div>
+
+    <!-- time for some flexing -->
+    
+    
+
+    
+
+    
+    
+
+
+    
+    <p>Justify content to center and flex-wrap to wrap.
+        Flex set to 3 for second item. <br>
+        Does not maintain triple size on smaller screens!
+
+    </p>
+    <div class="flex-container-box-three">
+        <div class="flex-item-box-last">1</div>
+        <div class="flex-item-box-last box-grow">2</div>
+        <div class="flex-item-box-last">3</div>
+        <div class="flex-item-box-last">4</div>
+        <div class="flex-item-box-last">5</div>
+        <div class="flex-item-box-last">6</div>
+    </div>
+        
+            
+
+            
+
+
+
+
+                
+
+
+    
+
+    
+
+    
+    
+
+    
+</body>
+
+</html>

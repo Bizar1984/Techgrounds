@@ -1,0 +1,132 @@
+.navigationContainer {
+    
+    height: 50px;
+    width: 1000px;
+}
+
+/* moving on */
+.banner {
+    height: 200px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    margin-top: 50px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 1px solid white;
+}
+
+.center-me {
+    color: #FFF;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px;
+
+}
+
+h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3::first-letter {
+    color: orange;
+}
+
+h3::after {
+    content: ' ***'
+}
+
+
+/* rows and columns */
+@media (min-width: 800px) {
+    .equal-height-container {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+.equal-height-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.first {
+    background-color: lightgray;
+    padding: 5px;
+    flex: 1;
+    
+}
+
+.second {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    background-color: black;
+}
+
+.second-a {
+    background-color: whitesmoke;
+    flex: 1;
+    padding: 5px;
+}
+
+.second-b {
+    background-color: darkred;
+    flex: 1;
+    padding: 5px;
+}
+
+/* bars stacked column different width */
+.chartContainer {
+    display: flex;
+    height: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barOne { height: 90%; background-color: #445A1B; }
+.barTwo { height: 40%; background-color: #77B800; }
+.barThree { height: 50%; background-color: #8FBE39}
+.barFour { height: 60%; background-color: #091B1F}
+.barFive { height: 20%; background-color: #4F5053}
+.barSix { height: 35%; background-color: darkolivegreen;}
+
+.barOne, .barTwo, .barThree, .barFour, .barFive, .barSix {
+    width: 50px;
+    margin-right: 8px;
+}
+
+/* second chart flex column */
+.chartContainerTwo {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barOne1 { width: 90%; background-color: #445A1B; }
+.barTwo2 { width: 40%; background-color: #77B800; }
+.barThree3 { width: 50%; background-color: #8FBE39}
+.barFour4 { width: 60%; background-color: #091B1F}
+.barFive5 { width: 20%; background-color: #4F5053}
+.barSix6 { width: 35%; background-color: darkolivegreen;}
+
+.barOne1, .barTwo2, .barThree3, .barFour4, .barFive5, .barSix6 {
+    height: 50px;
+    margin-top: 8px;
+}
+

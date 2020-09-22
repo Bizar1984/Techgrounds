@@ -1,0 +1,111 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* Navigation bar, example from w3schools */
+ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    background-color: lightyellow;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+    border: 1px solid #555;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.active, li:hover {
+    background-color:royalblue;
+}
+
+.rightside, .leftside {
+    margin: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        flex-direction: column;
+    }
+}
+
+.profiletext {
+    text-align: center;
+}
+
+.coloredtext {
+    color: blue;
+    text-align: center;
+}
+
+.cursief {
+    font-style: italic;
+    text-align: center;
+}
+
+.chart {
+    padding: 20px;
+    text-align: center;
+}
+
+.grafiekje {
+    width: 50%;
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.picas {
+    padding: 0.2em;
+    height: 50px;
+    width: 50px;
+}
+
+.whitetext {
+    color: white;
+    margin-top: 7px;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
+.info {
+    padding: 3px;
+    text-decoration: underline;
+}
+
+.checked {
+    color: orange;
+}
+
+.unchecked {
+    color: black;
+}
+
+.fa {
+    font-size: 30px !important;
+    cursor: pointer;
+}
+
+.main {
+   margin-left: 10px; 
+   margin-top: 10px;
+}
+
+

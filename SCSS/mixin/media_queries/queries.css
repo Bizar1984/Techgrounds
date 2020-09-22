@@ -1,0 +1,115 @@
+.button {
+  background-color: #089000;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  border-color: #0059b3;
+}
+
+@media all and (max-width: 30em) {
+  .button {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+
+.queriesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mixin-extend-container, .media-container, .outerSpace {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.mixin-extend-container {
+  background-color: #0eff00;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.media-container {
+  background-color: #ff8700;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.image {
+  max-width: 50%;
+  height: auto;
+  float: left;
+  padding: 10px;
+}
+
+.queries-text {
+  padding: 10px;
+}
+
+.important-text {
+  text-align: center;
+  color: #0059b3;
+}
+
+.outerSpace {
+  background-color: #0a5d00;
+  border: 1px solid purple;
+}
+
+.queries-variables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-image {
+  max-width: 90%;
+  height: auto;
+  margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .queries-variables {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body {
+  background-color: lightslategrey;
+}
+
+.white-text {
+  color: white;
+}
+/*# sourceMappingURL=queries.css.map */

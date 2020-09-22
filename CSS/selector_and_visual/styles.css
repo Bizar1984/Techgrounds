@@ -1,0 +1,10 @@
+.container  {
+    display: flex;
+}
+
+.flex_item {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+h2 {
+    text-align: left;
+    color: orange;
+    margin-left: 20px;
+}
+
+.layout {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    
+    height: 300px;
+    
+    
+}
+
+.blok100 {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: yellow;
+    color: black;
+}
+
+.flexstart {
+    align-self: flex-start;
+}
+
+.flexcenter {
+    align-self: center;
+    opacity: 0.4;
+}
+
+
+.answer {
+    color: white;
+    text-align: center;
+
+}
+
+.divOne {
+    width: 200px;
+    height: 100px;
+    padding: 1em;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    text-align: center;
+    align-self: flex-end;
+    
+  }
+
+.divTwo {
+width: 200px;
+height: 100px;
+padding: 1em;
+border: 1px solid red;
+box-sizing: border-box;
+text-align: center;
+margin-left: 10px;
+
+}
+
+.ownBox, .innerBox, .core {
+    color: orange;
+    align-self: center;
+    margin-bottom: 5px;
+
+}
+
+.ownBox {
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    border: 2px solid gold;
+    text-align: center;
+    padding: 10px;
+    color: yellow;
+    background-color: black;
+}
+
+.innerBox {
+    width: 125px;
+    height: 125px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+}
+    
+
+.core {
+    width: 62.5px;
+    height: 62.5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    text-align: center;
+    padding: 10px;
+    color: blue;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.flex-item {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    height: 25%;
+}
+
+.secondLayer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.thirdLayer {
+    display: flex;
+    margin-top: 25px;
+    padding: 10px;
+}
+  
+    
+
+
+
+
+

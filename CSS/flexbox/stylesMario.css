@@ -1,0 +1,108 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+/* All the items will be 100% width */
+.wrapper > * {
+    padding: 10px;
+    margin: 0px;
+    flex: 1 100%;
+}
+
+/* The navigation menu */
+.navigation {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    margin: 0px;
+    background: rgb(25, 0, 255);
+}
+
+/* The several links */
+.navigation a {                    
+    padding: 3px;
+    color: white;
+    padding: 10px;
+}
+
+.navigation li:first-child {
+    margin-right: auto;
+}
+
+.main {
+    text-align: center;
+    background: #115E80;
+}
+
+.buttons {
+    background: blue;
+    color: white;
+}
+    
+/* Secondary info */
+.flex_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    border: 3px solid silver;
+    background: #22BCFF;
+    padding: 10px;
+}
+
+.flex-item {
+  background-color: white;
+  
+  padding: 0px;
+  width: 250px;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.buttons_down {
+    background: blue;
+    color: white;
+    width: 250px;
+    height: 60px;
+    margin-top: 25px;
+
+}
+
+/* Footer */
+.footer {
+    background: #7EFF47;
+    text-align: center;
+    
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {    /* We tell both sidebars to share a row */
+    .aside {
+        flex: 1 0 0;     /* flex-grow, flex-shrink and flex-basis */
+    }
+}
+
+/* creating a simple hover effect */
+/* [1] The container */
+.img-hover-zoom {
+    height: 400px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }

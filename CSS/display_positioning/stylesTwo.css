@@ -1,0 +1,100 @@
+.container  {
+    display: flex;
+}
+
+.flex_item {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.background {
+    background-image: url("./../supernova.jpg");
+    height: 200px; /* You must set a specified height */
+    width: 200px;
+    background-position: left; /* position the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.box100 {
+    align-self: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.box50 {
+    position: relative;
+    left: 25px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: lightseagreen
+}
+
+.backgroundGreece {
+    align-self: flex-end;
+    background-image: url("./../greece.jpg");
+    height: 250px; /* You must set a specified height */
+    width: 500px;
+    background-position: center; /* position the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding: 1px;
+    margin: 10px;
+}
+
+.blackText {
+    color: black;
+    text-align: center;
+}
+
+.textGreece {
+    position: relative;
+    left: 130px;
+    top: 175px;
+    text-align: center;
+}
+
+.finalBackground {
+    background-image: url("./../backgroundImg.jpg");
+    height: 400px; /* You must set a specified height */
+    width: 80%;
+    background-position: center; /* position the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin: 10px;
+}
+
+.yellowBlock {
+    position: relative;
+    top: 40%;
+    background-color: yellow;
+    color: black;
+    height: 40px;
+    padding: 8px;
+}
+    
+
+.whiteBlock {
+    position: relative;
+    left: 20px;
+    top: 45%;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 50%;
+    text-align: left;
+    padding: 8px;
+}
+    
+    

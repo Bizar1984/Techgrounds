@@ -1,0 +1,61 @@
+.navigationContainer {
+    border: 1px solid blue;
+    height: 50px;
+    width: 1000px;
+}
+
+h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3::first-letter {
+    color: orange;
+}
+
+h3::after {
+    content: ' ***'
+}
+
+/* you are writing too much code, what is being duplicated without good reason? */
+.LastContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.box {
+    flex: 0 32%;
+    height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    border-radius: 4%;
+}
+
+.color1 {
+    background-color: #013159 ;
+}
+
+.color2 {
+    background-color: #2371A2 ;
+}
+
+.color3 {
+    background-color: #F2C50C ;
+}
+
+.color4 {
+    background-color: #F26028;
+}
+
+.color5 {
+    background-color: #BF263F;
+}
+
+.color6 {
+    background-color: #013159;
+}

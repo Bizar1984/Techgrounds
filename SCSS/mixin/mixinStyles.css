@@ -1,0 +1,64 @@
+.button {
+  background-color: #089000;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  border-color: #0059b3;
+}
+
+@media all and (max-width: 30em) {
+  .button {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+
+.buttonMixin {
+  background-color: yellow;
+  color: purple;
+  margin-top: 20px;
+  margin-left: 18%;
+}
+
+.buttonMixin:hover {
+  background-color: yellow;
+  color: purple;
+}
+
+.buttonMixin:hover {
+  background-color: #0bc300;
+  color: #000;
+  color: white;
+}
+
+.colorChangingSquare {
+  background: #fd7c2a;
+  -webkit-transition: background 2s;
+  /* For Safari 3.0 to 6.0 */
+  transition: background 2s;
+  /* For modern browsers */
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  border: none;
+}
+
+.colorChangingSquare:hover {
+  background: #3cc16e;
+}
+/*# sourceMappingURL=mixinStyles.css.map */

@@ -1,0 +1,181 @@
+.navigationContainer {
+    height: 50px;
+    width: 1000px;
+}
+    
+
+h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3::first-letter {
+    color: orange;
+}
+
+h3::after {
+    content: ' ***'
+}
+
+/* transitions */
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.changeColorText {
+    text-align: center;
+}
+
+a.color {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  color: royalblue;
+  font-weight: 800;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+a.color::before {
+    position: absolute;
+    content: attr(data-content); /* Prints the value of the attribute */
+    top: 0;
+    left: 0;
+    color: rgb(175, 204, 11);
+    text-decoration: none;
+    overflow: hidden;
+    transition: width 275ms ease;
+}
+
+a.color::before {
+    /* Same as before */
+    width: 0;
+    white-space: nowrap;
+}
+
+a.color:hover::before {
+    width: 100%;
+  }
+
+
+
+/* moving boxes */
+.one {
+    position: relative;
+    background-color: #6826FF;
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* which properties apply to all boxes? */
+.object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    
+}
+
+/* which properties are different for each box? */
+.boxOne {
+    top: 5%;
+    left: 5%;
+    background-color: #1EFCF1;
+    transition: all 0.5s linear;
+}
+
+.boxTwo {
+    top: 20%;
+    left: 5%;
+    background-color: #194FFF;
+    transition: all 1s ease-in;
+}
+
+.boxThree {
+    top: 35%;
+    left: 5%;
+    background-color: #1E92FC;
+    transition: all 1.5s ease-out;
+}
+
+.boxFour {
+    top: 50%;
+    left: 5%;
+    background-color: #1E92FC;
+    transition: all 1.2s ease-in-out;
+    
+    
+}
+
+.boxFive {
+    top: 65%;
+    left: 5%;
+    background-color: #1DF2AB;
+    transition: all 2.5s cubic-bezier(0.5, 0.4, 0.3, -.5);
+}
+
+
+#axis:hover .move-right{
+   transform: translate(400px,0);
+   -webkit-transform: translate(400px,0); /** Chrome & Safari **/
+   -o-transform: translate(400px,0); /** Opera **/
+   -moz-transform: translate(400px,0); /** Firefox **/
+}
+
+
+/*moving triangles*/
+#triangle-up {
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+    width: 0;
+    height: 0;
+    left: 700px;
+    top: 300px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+}
+
+#triangle-down {
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+
+ }
+
+.triangleContainer:hover #triangle-down {
+   transform: translate(350px,0) rotate(360deg);
+    -webkit-transform: translate(225px,0) rotate(360deg); /** Chrome & Safari **/
+    transform: translate(350px, 150px) rotate(360deg);
+}
+
+.triangleContainer:hover #triangle-up {
+   transform: translate(-350px,0) rotate(180deg);
+    -webkit-transform: translate(-350px,0) rotate(180deg); /** Chrome & Safari **/
+    transform: translate(-350px, -150px) rotate(180deg);
+}
+
+.triangleContainer {
+ 	width: 800px;
+ 	border: 1px solid black;
+ 	height: 400px;
+ 	position: relative;
+ 	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+ }
+
+
+ 
+
+
+

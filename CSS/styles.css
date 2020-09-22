@@ -1,0 +1,28 @@
+.navigationContainer {
+    height: 50px;
+    width: 1000px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3::first-letter {
+    color: orange;
+}
+
+h3::after {
+    content: ' ***'
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* margin-top: -360px;
+    margin-left: -640px; */
+    transform: translate(-50%, -50%);
+
+}
+

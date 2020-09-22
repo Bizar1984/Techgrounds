@@ -1,0 +1,166 @@
+/* form with input fields max width */
+.navigationContainer {
+    
+    height: 50px;
+    width: 1000px;
+}
+
+<<<<<<< Updated upstream
+.container {
+    border: 1px solid orange;
+    margin-top: 10px;
+    background-color: grey;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.form-row {
+    padding: 10px 0;
+    display: flex;
+}
+
+.form-row label {
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+.form-row input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+/* three column layout example */
+.column-layout {
+    background-color: #FFF;
+    margin: 20px auto 0 auto;
+    padding: 10px; 
+    /* padding top and right */
+    display: flex;
+    background-color: orange;
+}
+    
+.main-column {
+    flex: 2;
+    order: 2;
+    background-color: grey;
+    padding: 5px;
+}
+
+.sidebar-one {
+    flex: 1;
+    order: 1;
+    background-color: lightblue;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.sidebar-two {
+    flex: 1;
+    order: 3;
+    background-color: lightblue;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* three columns with margins in between */
+.call-out-container {
+    margin-top: 20px;
+}
+
+.call-out {
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    flex-basis: 30%;
+    border: 1px solid black;
+}
+
+@media (min-width: 800px) {
+    .call-out-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    }
+}
+
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: #ccb9da;}
+
+.flex-container-box {
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid white;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.flex-item-box {
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: orange;
+    border: 1px solid white;
+    flex-basis: 7%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* second box set to flex end */
+.flex-container-box-two {
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid white;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* second box set to center */
+
+.flex-container-box-three {
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item-box-last {
+    box-sizing: border-box;
+    background-color: orange;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 50px;
+}
+
+.box-grow {
+    flex: 3;
+}
+
+.flex-item-box-last:nth-child(even) {
+    background-color: darkred;
+}
+
+p::first-letter {
+    color: blue;
+}
+
+
+
+
+
+
+
+=======
+.navigationContainer {
+    border: 1px solid blue;
+    height: 50px;
+    width: 1000px;
+}
+
+>>>>>>> Stashed changes
+
+
+    

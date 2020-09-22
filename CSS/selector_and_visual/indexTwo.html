@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../navigateTop.css">
+    <link rel="stylesheet" href="stylesTwo.css">
+    <title>CSS Practice</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="navbar" class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn">Homepage
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../index.html">Only if you want to go back home</a>
+                </div>
+            </div>
+            <!-- my dir -->
+            <div class="dropdown">
+                <button class="dropbtn">Selectors & Visual
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Selectors & Visual rules opdr 1-4</a>
+                    <a href="indexTwo.html">Selectors & Visual rules opdr 5-8</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Box Model
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../box_model/index.html">Box-model opdr 1-3</a>
+                    <a href="../box_model/indexTwo.html">Box-model opdr 4-7</a>
+                    <a href="../box_model/indexThree.html">Box-model opdr 8-9</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Display & Positioning
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../display_positioning/index.html">Display & positioning opdr 1-4</a>
+                    <a href="../display_positioning/indexTwo.html">Display & positioning opdr 5-8</a>
+
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Pseudo-Elements
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../pseudo_elements/index.html">Pseudo elements opdr 1-3</a>
+                    <a href="../pseudo_elements/indexTwo.html">Pseudo elements opdr 4-7</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Flexbox
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../flexbox/index.html">Flexbox opdr 1-3</a>
+                    <a href="../flexbox/indexTwo.html">Flexbox opdr 4-7</a>
+                    <a href="../flexbox/indexThree.html">Flexbox opdr 8-10</a>
+
+                </div>
+            </div>
+            <!-- this is my directory -->
+            <div class="dropdown">
+                <button class="dropbtn">Transitions
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../transitions/index.html">Transitions opdr 1-3</a>
+                    <a href="../transitions/indexTwo.html">Transitions opdr 4-7</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Responsive
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../responsive/index.html">Final Chapter</a>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end of navigation container -->
+
+        <div class="flex_item">    
+            <h2>Child Selectors</h2> 
+            <p>The child selector selects all elements that are the children of a specified element. <br>
+                In this example all h2 elements which are children of div elements get the color orange. <br>
+                Syntax used "div > h2" 
+
+            </p><br>
+            
+            
+            <h3>Adjacent selectors</h3>
+            <p>The adjacent sibling selector selects all elements that are <br> 
+                the adjacent siblings of a specified element.
+                Let us try this. First we create an element. <br>
+                 I choose a section element. 
+                <section> I am inside a section element. Now we place another element directly AFTER it</section>
+                    <h4>
+                    I am a h4 element directly placed after the section element. We target it like this: <br>
+                    "section + h4" and the color property is given another value....
+                    </h4>
+            </p><br>
+            
+            
+            <h3>General selectors</h3>
+            <p>The general sibling selector selects all elements that are siblings of a specified element. <br>
+                Example time: Let us try and target all paragraph elements which are siblings of h3 elements! Et Voila! <br>
+                Syntax: "h3 ~ p"
+            </p>
+            <hr>
+
+            <p>Last one. Cascading and inheritance. Laten we dit uitleggen in mijn moedertaal. </p>
+            Inheritance, of overerving, is het proces waarbij bepaalde eigenschappen (je raadt het al) <br>
+            worden overgeërfd. Het lettertype is een voorbeeld van een eigenschap die ouders meegeven aan hun kinderen.<br>
+            Waarom? Omdat het onhandig is als je dit voor elke sectie apart moet instellen. <br><br>
+            Achtergrondkleur is een eigenschap die niet automatisch wordt doorgegeven. <br>
+            Achtergrondkleur "verdwijnt" en volgende generaties zullen <br>
+            deze eigenschap zelf moeten ontdekken. Vanaf de geboorte <br>
+            bevinden ze zich in een doorzichtige, kleurloze omgeving en wie van hen in <br>
+            in staat is hieraan te ontsnappen, wordt beslecht in een hevige strijd  <br>
+            die slechts door een enkeling aanschouwen wordt.
+            <br>
+            Waarom? Omdat het eigenschappen zijn die je meestal eenmalig wilt gebruiken. <br><br>
+            Cascade gaat over wat prioriteit krijgt in het geval van een conflict. Er zijn drie regels: <br>
+            1. Eigenschappen die later zijn ontstaan vervangen eerder verworven eigenschappen. <br>
+            2. Specifiekere selectors krijgen meer prioriteit. <br>
+            3. Eigenschappen die je zelf instelt krijgen een hogere prioriteit dan eigenschappen die zijn overgeërfd.
+            <hr>
+            </p>
+
+                
+
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

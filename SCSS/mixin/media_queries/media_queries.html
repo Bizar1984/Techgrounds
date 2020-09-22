@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="queries.css">
+    <title>Media Queries</title>
+</head>
+<body>
+
+    <div class="queriesContainer">   
+    
+        <div class="media-container">   
+        <h1 class="important-text">Media queries</h1>
+        
+            <div class="image-text-container">  
+                <img class="image" src="./mobile-first-responsive.jpg" alt="picture of different screen sizes">
+                <p class="queries-text">
+                    
+                    Media Queries with SCSS
+                    @supports; allows to use expressions in declaration queries. For example:
+                    @mixin sticky-position {   <br>
+                    { position: fixed;<br>
+                    @supports (position: sticky)<br>
+                    }<br>
+                    .banner {<br>
+                    @include sticky-position;<br>
+                    };<br><br>
+
+                    Using variables and @content. Check the example:<br>
+
+                    @mixin respond-to($media) {<br>
+                    @if $media == handhelds {<br>
+                    @media only screen and (max-width: 479px) { @content; }<br>
+                    }
+                    @else if $media == wide-handhelds {<br>
+                    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }<br>
+                    }
+                    @else if $media == tablets {<br>
+                    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }<br>
+                    }<br>
+                    } <br><br>
+
+                    #sidebar {<br>
+                    float: left;<br>
+                    width: 300px;<br>
+                    @include respond-to(handhelds) { float: none; }<br>
+                    @include respond-to(wide-handhelds) { float: none; }<br>
+                    @include respond-to(tablets) { width: 240px; }<br>
+                    }<br><br>
+
+                    Variables<br>
+                    $information-phone: "only screen and (max-width : 320px)";<br>
+                    $extra-small: "only screen and (max-width : 576px)";<br>
+                    $small: "screen and (max-width: 768px) and (min-width: 576px)"<br>
+                    $medium: "screen and (max-width: 992px) and (min-width: 768px)"<br>
+                    $large: "screen and (max-width: 1200px) and (min-width: 992px)"<br>
+                    $extra-large: "only screen and (min-width : 1200px)";<br>
+                    $landscape:: "only screen and (orientation: landscape)";<br>
+
+                    @media #{$information-phone} {<br>
+                    background: red;<br>
+                    }<br><br>
+
+                    More<br>
+                    $min-width-name: min-device-width;<br>
+                    $max-width-name: max-device-width;<br>
+                    $target-width: 320px;<br><br>
+
+                    @media screen and ($max-width-name: $target-width) {<br>
+                    color: white;<br>
+                    }<br><br>
+
+                    Increasing the max width for a new breakpoint <br>
+                    @media screen and ($max-width-name: $target-width + 20) {<br>
+                    color: white;<br>
+                    }
+
+
+
+                </p>
+                </div>
+        </div>
+
+        <div class="mixin-extend-container">
+            <h2 class="important-text">@extend and @mixin. Which one to use?</h2>
+            <p>@extend is used more for shared, static and similar styles. It allows you to share styles between selectors, <br> analogue to <span style= "color:blue">div class= "error newError"</span><br>
+                @mixins for dynamic styles with passed arguments which are leading to <br> repeated declarations. No-repeat please... <br>
+                %: called a plaeholder selector, this is NOT compiled <br>
+            </p>
+            <p>Some examples: @mixin error {<br>
+                border: 1px solid black;<br>
+                background-color: #fdd;<br><br>
+
+                    .newError {<br>
+                    @include error;<br>
+                    }<br><br>
+
+                    .notSoSeriousError {<br>
+                    @include error;<br>
+                    }<br>
+                } <br><br>
+                Above compiles to the following: <br>
+                    .newError {<br>
+                        border: 1px solid black;<br>
+                        background-color: #fdd;<br>
+                    }<br>
+                    .notSoSeriousError {<br>
+                        border: 1px solid black;<br>
+                        background-color: #fdd;
+                    }<br>
+                    <br>
+                    Declarations are being repeated, this is bad practice. Try to pass in parameters.
+                    <p>Composes(CSS- Modules) leads to duplicate classes, but appear in the markup, not in the stylesheets</p>
+
+        
+            </p>
+        </div>
+
+        
+
+
+    </div>
+
+    <div class="outerSpace">   
+        <h2 class="important-text white-text">Using scss and media queries to change flex-direction on smaller screens </h2>
+        <div class="queries-variables">
+            
+            <div class="image-container">
+                <img class="flex-image" src="./IMAG0618.jpg" alt="holiday picture">
+            </div>
+            <div class="image-container">
+                <img class="flex-image" src="./IMAG0618.jpg" alt="holiday picture">
+            </div>
+            <div class="image-container">
+                <img class="flex-image" src="./IMAG0618.jpg" alt="holiday picture">
+            </div>
+            <div class="image-container">
+                <img class="flex-image" src="./IMAG0618.jpg" alt="holiday picture">
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+    

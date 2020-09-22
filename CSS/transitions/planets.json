@@ -1,0 +1,25 @@
+[{
+        "radius": 30,
+        "distanceX": 60,
+        "distanceY": 80,
+        "fill": "#13118A"
+    },
+    {
+        "radius": 40,
+        "distanceX": 150,
+        "distanceY": 80,
+        "fill": "#0B9685"
+    },
+    {
+        "radius": 15,
+        "distanceX": 230,
+        "distanceY": 80,
+        "fill": "#990365"
+    },
+    {
+        "radius": 50,
+        "distanceX": 330,
+        "distanceY": 80,
+        "fill": "#0B5DA1"
+    }
+]
