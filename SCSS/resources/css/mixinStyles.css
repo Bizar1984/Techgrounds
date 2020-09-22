@@ -9,7 +9,7 @@
           box-sizing: border-box;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 30;
   color: #FFFFFF;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
@@ -21,18 +21,16 @@
   border-color: #0059b3;
 }
 
-@media all and (max-width: 30em) {
+/* @media all and (max-width: 30em) {
   .button {
     display: block;
     margin: 0.2em auto;
   }
-}
+} */
 
 .buttonMixin {
   background-color: yellow;
   color: purple;
-  margin-top: 20px;
-  margin-left: 18%;
 }
 
 .buttonMixin:hover {
@@ -54,7 +52,6 @@
   /* For modern browsers */
   width: 500px;
   height: 300px;
-  margin: 20px;
   border: none;
 }
 
@@ -62,3 +59,11 @@
   background: #3cc16e;
 }
 /*# sourceMappingURL=mixinStyles.css.map */
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid white;
+}

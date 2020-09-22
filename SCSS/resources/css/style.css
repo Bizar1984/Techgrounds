@@ -33,7 +33,7 @@ body {
 }
 
 .buttonTwo {
-  background-color: #063b00;
+  background-color: #ff8700;
 }
 
 .standOut {
@@ -47,8 +47,11 @@ body {
   color: whitesmoke;
   font-size: 1rem;
   font-weight: bold;
-  text-align: center;
   font-weight: lighter;
   font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
+
+.new-background-color {
+  background-color: purple;
+}

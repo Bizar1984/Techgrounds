@@ -46,6 +46,11 @@
 
 .mixin-extend-container {
   background-color: #0eff00;
+  border: 1px solid white;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -53,6 +58,11 @@
 
 .media-container {
   background-color: #ff8700;
+  border: 2px solid white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -106,7 +116,7 @@
 }
 
 body {
-  background-color: lightslategrey;
+  background-color: black;
 }
 
 .white-text {
