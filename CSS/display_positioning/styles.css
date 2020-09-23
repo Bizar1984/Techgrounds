@@ -13,7 +13,7 @@
 .absoluteHeader {
     position: fixed;
     left: 50px;
-    bottom: 300px;
+    bottom: 250px;
     color: rgb(0, 255,0);
     opacity: 0.7;
 }

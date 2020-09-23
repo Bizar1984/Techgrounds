@@ -1,12 +1,9 @@
-.navigationContainer {
-    
-    height: 50px;
-    width: 1000px;
-}
+
 
 h3 {
     text-align: left;
     margin-top: 50px;
+    margin-left: 5px;
 }
 
 h3::first-letter {
@@ -23,11 +20,12 @@ h3::after {
 
 
 /*next chapter*/
-.container {
+.Imagecontainer {
 	position: relative;
 	width: 60%;
 	height: 125px;
   margin-right: auto;
+  margin-left: 30px;
   
 }
 
@@ -53,7 +51,7 @@ div.two {
   overflow: hidden;
 }
 
-.container:hover .one {
+.Imagecontainer:hover .one {
    transform: translate(600px,0) rotate(360deg);
     -webkit-transform: translate(600px,0) rotate(720deg); /** Chrome & Safari **/
     

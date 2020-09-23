@@ -60,7 +60,7 @@
 
 .textGreece {
     position: relative;
-    left: 130px;
+    left: 70px;
     top: 175px;
     text-align: center;
 }
@@ -80,18 +80,18 @@
     top: 40%;
     background-color: yellow;
     color: black;
-    height: 40px;
+    height: 50px;
     padding: 8px;
 }
     
 
 .whiteBlock {
     position: relative;
-    left: 20px;
+    left: 100px;
     top: 45%;
     background-color: white;
     color: black;
-    height: 30px;
+    height: 45px;
     width: 50%;
     text-align: left;
     padding: 8px;

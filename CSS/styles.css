@@ -1,11 +1,11 @@
-.navigationContainer {
-    height: 50px;
-    width: 1000px;
+body {
+    background-color: #650BA1;
 }
 
 h3 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    
 }
 
 h3::first-letter {
@@ -16,13 +16,37 @@ h3::after {
     content: ' ***'
 }
 
+
 .centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* margin-top: -360px;
-    margin-left: -640px; */
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.navbar {
+    border-bottom: 1px solid white;
+    /* height: 75px; */
 
 }
+
+h6 {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+h6::first-letter {
+    color: orange;
+}
+
+h6::after {
+    content: ' |'
+}
+
+
+
+
+
+    
+
 

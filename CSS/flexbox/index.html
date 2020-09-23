@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- stylesheet bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../navigateTop.css">
     <link rel="stylesheet" href="styles.css">
     <title>CSS Practice</title>
@@ -12,96 +15,107 @@
 
 <body>
     
-    <div class="navigationContainer">
-        <div id="navbar" class="navbar">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-dark">
+        <a class="navbar-brand active" href="../index.html">
+            <img src="https://img.icons8.com/nolan/64/home.png" />
+        </a>
 
-            <div class="dropdown">
-                <button class="dropbtn">Homepage
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../index.html">Only if you want to go back home</a>
-                </div>
-            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="dropdown">
-                <button class="dropbtn">Selectors & Visual
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../selector_and_visual/index.html">Selectors & Visual rules opdr 1-4</a>
-                    <a href="../selector_and_visual/indexTwo.html">Selectors & Visual rules opdr 5-8</a>
-                </div>
-            </div>
+        <!-- let us link some -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <div class="dropdown">
-                <button class="dropbtn">Box Model
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../box_model/index.html">Box-model opdr 1-3</a>
-                    <a href="../box_model/indexTwo.html">Box-model opdr 4-7</a>
-                    <a href="../box_model/indexThree.html">Box-model opdr 8-9</a>
-                </div>
-            </div>
+            <ul class="navbar-nav mr-auto">
+                <!-- selector & visual -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Selectors & Visual
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../selector_and_visual/index.html">Selectors & Visual rules opdr
+                            1-4</a>
+                        <a class="dropdown-item" href="../selector_and_visual/indexTwo.html">Selectors & Visual rules
+                            opdr 5-8</a>
+                </li>
 
-            <div class="dropdown">
-                <button class="dropbtn">Display & Positioning
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../display_positioning/index.html">Display & positioning opdr 1-4</a>
-                    <a href="../display_positioning/indexTwo.html">Display & positioning opdr 5-8</a>
+                <!-- box model -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Box Model
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../box_model/index.html">Box-model opdr 1-3</a>
+                        <a class="dropdown-item" href="../box_model/indexTwo.html">Box-model opdr 4-7</a>
+                        <a class="dropdown-item" href="../box-modelindexThree.html">Box-model opdr 8-9</a>
+                </li>
 
-                </div>
-            </div>
+                <!-- display & positioning -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Display & Positioning
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../display_positioning/index.html">Display & positioning opdr
+                            1-4</a>
+                        <a class="dropdown-item" href="../display_positioning/indexTwo.html">Display & positioning opdr
+                            5-8</a>
+                </li>
 
+                <!-- pseudo elements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Psuedo-Elements
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pseudo_elements/index.html">Pseudo elements opdr 1-3</a>
+                        <a class="dropdown-item" href="../pseudo_elements/indexTwo.html">Pseudo elements opdr 4-7</a>
+                </li>
 
-            <div class="dropdown">
-                <button class="dropbtn">Pseudo-Elements
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../pseudo_elements/index.html">Pseudo elements opdr 1-3</a>
-                    <a href="../pseudo_elements/indexTwo.html">Pseudo elements opdr 4-7</a>
-                </div>
-            </div>
+                <!-- flexbox -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Flexbox
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./index.html">Flexbox opdr 1-3</a>
+                        <a class="dropdown-item" href="./indexTwo.html">Flexbox opdr 4-7</a>
+                        <a class="dropdown-item" href="./indexThree.html">Flexbox opdr 8-10</a>
+                </li>
 
-            <!-- this is my directory -->
-            <div class="dropdown">
-                <button class="dropbtn">Flexbox
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="index.html">Flexbox opdr 1-3</a>
-                    <a href="indexTwo.html">Flexbox opdr 4-7</a>
-                    <a href="indexThree.html">Flexbox opdr 8-10</a>
+                <!-- transitions -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transitions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../transitions/index.html">Transitions opdr 1-3</a>
+                        <a class="dropdown-item" href="../transitions/indexTwo.html">Transitions opdr 4-7</a>
+                </li>
 
-                </div>
-            </div>
+                <!-- responsive -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Responsive
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../responsive/index.html">Final Chapter</a>
+                </li>
+            </ul>
 
-            <div class="dropdown">
-                <button class="dropbtn">Transitions
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../transitions/index.html">Transitions opdr 1-3</a>
-                    <a href="../transitions/indexTwo.html">Transitions opdr 4-7</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Responsive
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../responsive/index.html">Final Chapter</a>
-
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- end of navigation menu -->
+
+    </nav>
+    <!-- end of navigation container -->
 
     <!-- time for some flexing -->
     <div class="container">
@@ -150,16 +164,7 @@
             <p>Proin in enim eu justo tempus malesuada. Sed sodales purus.
             </p> 
 
-            <div class="dropdown">
-                <button class="dropbtn">Responsive
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../responsive/index.html">Responsive opdr 1-3</a>
-                    <a href="../responsive/indexTwo.html">Responsive opdr 4-6</a>
-                </div>
-
-            </div>
+            
 
         </div>
 
@@ -196,9 +201,9 @@
 
     <!-- boxes with fixed sizes, or without fixed sizes. No width -->
     <h3>Flex-basis set to 7 procent</h3>
-    <p>Justify content to flex-start and flex-wrap to wrap.
+    
 
-    </p>
+    
     <div class="flex-container-box">
         <div class="flex-item-box">1</div>
         <div class="flex-item-box">2</div>
@@ -209,9 +214,9 @@
     </div>
 
     <h3>Flex-basis set to 7 procent</h3>
-    <p>Justify content to flex-end and flex-wrap to wrap.
+    
 
-    </p>
+    
     <div class="flex-container-box-two">
         <div class="flex-item-box">1</div>
         <div class="flex-item-box">2</div>
@@ -232,11 +237,9 @@
 
 
     
-    <p>Justify content to center and flex-wrap to wrap.
-        Flex set to 3 for second item. <br>
-        Does not maintain triple size on smaller screens!
+    
 
-    </p>
+    <h3>An example of flex grow</h3>
     <div class="flex-container-box-three">
         <div class="flex-item-box-last">1</div>
         <div class="flex-item-box-last box-grow">2</div>
@@ -252,7 +255,16 @@
 
 
 
-
+<!-- links we need for the collapsing navigation bar -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
                 
 
 
