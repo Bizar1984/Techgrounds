@@ -1,0 +1,36 @@
+@import 'colors';
+// set text color based on background
+@function set-text-color($color) {
+    @if(lightness($color)) > 40 {
+        @return $dark-color;
+
+    } @else {
+        @return $white-color;
+
+    }
+}
+
+// set background & text-color. Mixin is like a function but doesnt return anything
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+
+}
+
+// creating margin $ padding classes
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}

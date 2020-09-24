@@ -1,0 +1,20 @@
+@import 'config';
+@import 'colors';
+
+body{
+    background-color: $primary-color;
+}
+
+.row-one {
+    @include set-background($dark-color);
+    .paragraph {
+        color: set-text-color($dark-color);
+    }
+}
+
+.row-two {
+    @include set-background($light-color);
+    .paragraph {
+        color: set-text-color($light-color);
+    }
+}
