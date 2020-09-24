@@ -1,0 +1,101 @@
+body {
+    background-color: #2D61A6;
+}
+
+.container {
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: #F2B705;
+}
+
+.col-one {
+    background-color: #37DAB5;
+    border-right: 1px solid white;
+}
+
+.col-two {
+    background-color: #00BF93;
+}
+
+.col-three {
+    background-color: #008C6C;
+    border-left: 1px solid white;
+}
+
+.center-text {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    color: #8C2020;
+    padding: 2px;
+    margin: 0px;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+}
+
+.container-fluid-extra {
+    border: 1px solid white;
+}
+
+.row, .rowOne {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.white-border {
+    border: 2px solid white;
+    padding: 5px;
+}
+
+/* coloring */
+div.color-one {
+    background-color: #1F9C30;
+}
+
+div.color-two {
+    background-color: #125C1C;
+}
+
+div.color-three {
+    background-color: #2CDB43;
+}
+
+div.color-four {
+    background-color: #2EE847;
+}
+
+div.color-five {
+    background-color: #27C23B;
+}
+
+div.col-md-auto {
+ background:#2B9E93;
+}
+
+.white-text {
+    color: white;
+}
+
+.col-lg-2 {
+    background-color: #0D9488;
+}
+
+.colorOne {
+    background-color: #05736A;
+}
+
+.colorTwo {
+    background-color: #4AB5A9;
+}
+
+.colorThree {
+    background-color: #77D1C7;
+}
+  
