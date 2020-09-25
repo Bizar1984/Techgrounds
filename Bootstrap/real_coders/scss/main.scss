@@ -1,5 +1,5 @@
-@import 'config';
-@import 'colors';
+@import './config';
+@import './colors';
 
 body{
     background-color: $primary-color;
@@ -16,5 +16,20 @@ body{
     @include set-background($light-color);
     .paragraph {
         color: set-text-color($light-color);
+    }
+}
+
+.jumbotron {
+    @include set-background($light-color-two);
+    .header-one, .lead {
+        color: set-text-color($light-color-two);
+    }
+
+}
+
+.shrink {
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform: scale(0.9);
     }
 }
