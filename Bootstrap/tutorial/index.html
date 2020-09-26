@@ -1,333 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Stolen layout</title>
+	<title>Bootstrap coming through</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
-	
+
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
-	
-	
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-  
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  <ul class="navbar-nav mr-auto">
-		<li class="nav-item active">
-		  <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="#">Tools</a>
-		</li>
-		<li class="nav-item dropdown">
-		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			More
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="#">Tools</a>
-			<a class="dropdown-item" href="#">Documentation</a>
-			<a class="dropdown-item" href="#">Animation</a>
-		  </div>
-		</li>
-		
-	  </ul>
-	  
-	</div>
-  </nav>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
 
+		<a class="navbar-brand" href="index.html">
+			<img src="https://img.icons8.com/nolan/64/home.png" />
+		</a>
 
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-interval="false">
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-		<li data-target="#slides" data-slide-to="1"></li>
-		<li data-target="#slides" data-slide-to="2"></li>
-	</ul>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="./img/background.png" alt="background">
-			<div class="carousel-caption">
-				<h1 class="display-2">Bootstrap</h1>
-				<h3>Start building</h3>
-				<button type="button" class="btn btn-outline-light btn-lg">VIEW 
-					DEMO</button>
-					<button type="button" class="btn btn-primary btn-lg">Get Started</button>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="./img/background2.png" alt="background-two">
-		</div>
-		<div class="carousel-item">
-			<img src="./img/background3.png" alt="background-three">
-		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	</div>
-</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<!-- invisible left items -->
+			</ul>
 
-
-<!--- Jumbotron -->
-<div class="container-fluid">
-	<div class="row jumbotron">
-		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-			<p class="lead">Here we will put some text regarding the
-				framework of Bootstrap
-			</p>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-			<a href="#">
-				<button type="button" class="btn btn-primary btn-lg">Download</button>
-			</a>
-		</div>
-	</div>
-</div>
+			<ul class="navbar-nav navbar-right">
+				<li class="nav-item dropdown">
 					
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Built with ease</h1>
-			<hr>
-			<div class="col-12">
-				<p class="lead">Some more centered text for everybody to get the picture</p>
-			</div>
-		</div>
-	</div>
-</div>
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Programs</a>
+						<a class="dropdown-item" href="#">Documentation</a>
+						
+					</div>
 
-
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-code"></i>
-			<h3>HTML 5</h3>
-			<p>Built with the latest version of HTML5</p>
+				</li>
+				<i class='fas fa-sign-out-alt' style='font-size:32px;color:white; margin: .2rem;'></i>
+			</ul>
 		</div>
 
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-bold"></i>
-			<h3>Bootstrap</h3>
-			<p>Built with Bootstrap 4</p>
-		</div>
-
-		<div class="col-sm-12 col-md-4">
-			<i class="fab fa-css3"></i>
-			<h3>CSS3</h3>
-			<p>and CSS3</p>
-		</div>
-
-	</div>
-	<hr class="my-4">
-
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-md-12 col-lg-6">
-			<h2>Web Development</h2>
-			<p>Web development is the building and maintenance of websites; it’s the work that happens 
-				behind the scenes to make a website look great, work fast and perform well with 
-				a seamless user experience.</p>
-			<p>Web developers, or ‘devs’, do this by using a variety of coding languages. The languages 
-				they use depends on the types of tasks they are preforming and 
-				the platforms on which they are working.</p>
-			<p>Web development skills are in high demand worldwide and well paid too – 
-				making development a great career option. It is one of the easiest 
-				accessible higher paid fields as you do not need a traditional 
-				university degree to become qualified.</p>
-			<br>
-			<a href="#" class="btn btn-primary">Learn more</a>
-		</div>
-		<div class="col-lg-6">
-			<img src="./img/webdev.png" alt="desk" class="img-fluid">
-		</div>
-	</div>
-</div>
-<hr class="y-4">
-
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
-
-		</div>
-	</div>
-</figure>
-
-<!--- hidden gif images -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">Reveal</button>
-<div id="emoji" class="collapse">
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-sm-6 col-md-3">
-				<img src="https://i.gifer.com/KKIl.gif" alt="hulk" class="gif">
-			</div>
-			<div class="col-sm-6 col-md-3">
-				<img src="https://media1.tenor.com/images/8e231ce4c014c59d8bdee803d2d39619/tenor.gif?itemid=15220317" alt="joker" class="gif">
-			</div>
-			<div class="col-sm-6 col-md-3">
-				<img src="https://media3.giphy.com/media/26AHxw0Zd7QLrNDzy/source.gif" alt="wonder-woman" class="gif">
-			</div>
-			<div class="col-sm-6 col-md-3">
-				<img src="https://31.media.tumblr.com/9114fd605e2846bf32e5dbb4083da7c1/tumblr_mrveyfasxz1s98zawo1_500.gif" alt="batman" class="gif">
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--- learning -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">What you need to learn</h1>
-			<hr>
-		</div>
-	</div>
-</div>
-
-
-<!--- a selection from our inventory -->
-<div class="container-fluid padding stop-full-width">
-	<div class="row padding">
-		<div class="col-md-4">
-			<div class="card">
-				<img src="./img/canvas.jpg" alt="canvas" class="card-img-top img-fluid">
-				<div class="card-body">
-					<h4 class="card-title">The Canvas</h4>
-					<p class="card-text">Start animating</p>
-					<a href="#" class="btn btn-outline-secondary">Check the source code</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card">
-				<img src="./img/the-magic-of-javascript.jpg" alt="javascript" class="card-img-top img-fluid">
-				<div class="card-body">	
-					<h4 class="card-title">Javascript</h4>
-					<p class="card-text">Web functionality
-						</p>
-					<a href="#" class="btn btn-outline-secondary">Check the source code</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card">
-				<img src="./img/python.jpg" alt="python" class="card-img-top img-fluid">
-				<div class="card-body">
-					<h4 class="card-title">Python</h4>
-					<p class="card-text">General purpose</p>
-					<a href="#" class="btn btn-outline-secondary">Check the source code</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-md-12 col-lg-6">
-			<h2>Advantages of Bootstrap</h2>
-			<p>No more spending hours coding your own 
-				grid—Bootstrap comes with its own grid system predefined! <br><br>
-
-				Defining custom breakpoints for each column is a snap using 
-				their extra small, small, medium, large, and extra large breaks. 
-				You can also simply stick to the default as it might already 
-				meet the needs of your site.</p>
-			<p>Bootstrap also allows developers to take advantage of over a dozen custom JQuery plugins. 
-				JQuery gives you even more room to play with interactivity, 
-				offering up easy solutions for modal popups, transitions, 
-				image carousels, and—one of my personal favorites—a plugin called 
-				scrollspy, which automatically updates your navigation bar 
-				as you scroll through a page.</p>
-				<br>
-		</div>
-
-		<div class="col-lg-6">
-			<img src="./img/bootstrap2.png" alt="bootstrap" class="img-fluid">
-		</div>
-	</div>
-	<hr class="my-4">
-</div>
-				 
+	</nav>
 				
-			
-<!--- Connect -->
-<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-12">
-			<h2>Connect to your platforms</h2>
-		</div>
-		<div class="col-12 social padding">
-			<a href="#"><i class="fab fa-facebook"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-google-plus-g"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-youtube"></i></a>
+				
+	<!--- Image Slider -->
+	<div id="slides" class="carousel slide" data-interval="false">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./img/background.png" alt="background">
+				<div class="carousel-caption">
+					<h1 class="display-2">Bootstrap</h1>
+					<h3>Start building</h3>
+					<button type="button" class="btn btn-outline-light btn-lg">VIEW
+						DEMO</button>
+					<button type="button" class="btn btn-primary btn-lg">Get Started</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./img/background2.png" alt="background-two">
+			</div>
+			<div class="carousel-item">
+				<img src="./img/background3.png" alt="background-three">
+			</div>
 
 		</div>
 	</div>
-</div>
 
-<!--- Footer -->
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center d-flex justify-content-center">
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Contact us</h5>
-		<hr class="light">
-		<p>555-555-555</p>
-		<p>techgrounds@gmail.com</p>
-		<p>Osorpplein</p>
-		<p>Amsterdam</p>
+
+	<!--- Jumbotron -->
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p class="lead">Bootstrap 4 now available! What are you waiting for? Click on the download
+								button and get your own version. Follow the instructions carefully and you reach expert
+								status in no time.
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+				<a href="#">
+					<button type="button" class="btn btn-primary btn-lg">Download</button>
+				</a>
+			</div>
+		</div>
 	</div>
 
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Our opening hours</h5>
-		<hr class="light">
-		<p>Monday: 9am to 5pm</p>
-		<p>Tuesday: 10am to 9pm</p>
-		<p>Thursday: 12pm to 4pm</p>
-		<p>Sunday: closed</p>
+	<!--- Welcome Section -->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Built with ease</h1>
+				<hr>
+				<div class="col-12">
+					<p class="lead">This is a lead class where you can put centered text.
+						Go ahead and give it a try yourself. Media queries are a thing of the past now.
+						Just let Bootstrap handle this for you. We know you have more important things
+						to focus on!
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Locations</h5>
-		<hr class="light">
-		<p>Amsterdam</p>
-		<p>Rotterdam</p>
-		<p>New York</p>
-		<p>Madagascar</p>
-	</div>
-	<div class="col-12">
-		<hr class="light-100">
-		<h5>&copy;crankjohre@hotmail.com</h5>
-	</div>
-</div>
 
-</div>
+	<!--- Three Column Section -->
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class="fas fa-code"></i>
+				<h3>HTML 5</h3>
+				<p>Built with the latest version of HTML5</p>
+			</div>
 
-</footer>
-		
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class="fas fa-bold"></i>
+				<h3>Bootstrap</h3>
+				<p>Built with Bootstrap 4</p>
+			</div>
+
+			<div class="col-sm-12 col-md-4">
+				<i class="fab fa-css3"></i>
+				<h3>CSS3</h3>
+				<p>and CSS3</p>
+			</div>
+
+		</div>
+		<hr class="my-4">
+
+	</div>
+
+	<!--- Two Column Section -->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-md-12 col-lg-6">
+				<h2>Web Development</h2>
+				<p>Web development is the building and maintenance of websites; it’s the work that happens
+					behind the scenes to make a website look great, work fast and perform well with
+					a seamless user experience.</p>
+				<p>Web developers, or ‘devs’, do this by using a variety of coding languages. The languages
+					they use depends on the types of tasks they are preforming and
+					the platforms on which they are working.</p>
+				<p>Web development skills are in high demand worldwide and well paid too –
+					making development a great career option. It is one of the easiest
+					accessible higher paid fields as you do not need a traditional
+					university degree to become qualified.</p>
+				<br>
+				<a href="#" class="btn btn-primary">Learn more</a>
+			</div>
+			<div class="col-lg-6">
+				<img src="./img/webdev.png" alt="desk" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	<hr class="y-4">
+
+	<!--- Fixed background -->
+	<figure>
+		<div class="fixed-wrap">
+			<div id="fixed">
+
+			</div>
+		</div>
+	</figure>
+
+	<!--- hidden gif images -->
+	<button class="fun" data-toggle="collapse" data-target="#emoji">Watch it unfold</button>
+	<div id="emoji" class="collapse">
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-sm-6 col-md-3">
+					<img src="https://i.gifer.com/KKIl.gif" alt="hulk" class="gif">
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<img src="https://media1.tenor.com/images/8e231ce4c014c59d8bdee803d2d39619/tenor.gif?itemid=15220317"
+						alt="joker" class="gif">
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<img src="https://media3.giphy.com/media/26AHxw0Zd7QLrNDzy/source.gif" alt="wonder-woman"
+						class="gif">
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<img src="https://31.media.tumblr.com/9114fd605e2846bf32e5dbb4083da7c1/tumblr_mrveyfasxz1s98zawo1_500.gif"
+						alt="batman" class="gif">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- learning -->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">What you need to learn</h1>
+				<hr>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- a selection from our inventory -->
+	<div class="container-fluid padding stop-full-width">
+		<div class="row padding">
+			<div class="col-md-4">
+				<div class="card">
+					<img src="./img/canvas.jpg" alt="canvas" class="card-img-top img-fluid">
+					<div class="card-body">
+						<h4 class="card-title">The Canvas</h4>
+						<p class="card-text">Start animating</p>
+						<a href="#" class="btn btn-outline-secondary">Check the source code</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img src="./img/the-magic-of-javascript.jpg" alt="javascript" class="card-img-top img-fluid">
+					<div class="card-body">
+						<h4 class="card-title">Javascript</h4>
+						<p class="card-text">Web functionality
+						</p>
+						<a href="#" class="btn btn-outline-secondary">Check the source code</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img src="./img/python.jpg" alt="python" class="card-img-top img-fluid">
+					<div class="card-body">
+						<h4 class="card-title">Python</h4>
+						<p class="card-text">General purpose</p>
+						<a href="#" class="btn btn-outline-secondary">Check the source code</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- Two Column Section -->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-md-12 col-lg-6">
+				<h2>Advantages of Bootstrap</h2>
+				<p>No more spending hours coding your own
+					grid—Bootstrap comes with its own grid system predefined! <br><br>
+
+					Defining custom breakpoints for each column is a snap using
+					their extra small, small, medium, large, and extra large breaks.
+					You can also simply stick to the default as it might already
+					meet the needs of your site.</p>
+				<p>Bootstrap also allows developers to take advantage of over a dozen custom JQuery plugins.
+					JQuery gives you even more room to play with interactivity,
+					offering up easy solutions for modal popups, transitions,
+					image carousels, and—one of my personal favorites—a plugin called
+					scrollspy, which automatically updates your navigation bar
+					as you scroll through a page.</p>
+				<br>
+			</div>
+
+			<div class="col-lg-6">
+				<img src="./img/bootstrap2.png" alt="bootstrap" class="img-fluid">
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+
+
+	<!--- Connect -->
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-12">
+				<h2>Connect to your platforms</h2>
+			</div>
+			<div class="col-12 social padding">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+
+			</div>
+		</div>
+	</div>
+
+	<!--- Footer -->
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center d-flex justify-content-center">
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Contact us</h5>
+					<hr class="light">
+					<p>555-555-555</p>
+					
+					<p>Osorpplein 16</p>
+					<p>1068 EL, Amsterdam</p>
+				</div>
+
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Our opening hours</h5>
+					<hr class="light">
+					<p>Monday: 9am to 5pm</p>
+					<p>Tuesday: 10am to 9pm</p>
+					<p>Thursday: 12pm to 4pm</p>
+					<p>Sunday: closed</p>
+				</div>
+
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Locations</h5>
+					<hr class="light">
+					<p>Amsterdam</p>
+					<p>Rotterdam</p>
+					<p>Baltimore</p>
+					<p>Madagascar</p>
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy;crankjohre@hotmail.com</h5>
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+
 
 
 
@@ -335,7 +350,5 @@
 
 
 </body>
+
 </html>
-
-
-

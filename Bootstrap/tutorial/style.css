@@ -8,19 +8,32 @@ html, body {
   background-color: whitesmoke;
 }
 
+/* leave some space on the sides */
 .stop-full-width {
   width: 90%;
 }
-
-.navbar {
-  padding: .6rem;
-}
+/* styling our navigation bar */
 .navbar-nav li {
   padding-right: 20px;
 }
 .nav-link {
   font-size: 1.1em !important
 }
+.navbar-right a:hover,
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+.navbar {
+    border-bottom: 1px solid white;
+    
+}
+
+.navbar-brand img {
+    max-height: 45px;
+}
+
+/* the carousel */
 .carousel-inner img {
   width: 100%;
   height: 100%;
@@ -34,7 +47,7 @@ html, body {
 .carousel-caption h1 {
   font-size: 500%;
   text-transform: uppercase;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 8px #000;
 }
 .carousel-caption h3 {
   font-size: 200%;
@@ -42,6 +55,7 @@ html, body {
   text-shadow: 1px 1px 5px #000;
   padding-bottom: 1rem;
 }
+/* buttons */
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #6648b1;
@@ -57,6 +71,7 @@ html, body {
 .padding {
   padding-bottom: 2rem;
 }
+/* welcome */
 .welcome {
   width: 75%;
   margin: 0 auto;
@@ -90,8 +105,8 @@ html, body {
   height: 70%;
 }
 .social a {
-  font-size: 3.5em;
-  padding: 2.5rem;
+  font-size: 2.5em;
+  padding: 1rem;
 }
 .fa-facebook {
   color: #3b5998;
@@ -140,8 +155,8 @@ hr.light-100 {
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .social a {
-    font-size: 4em;
-    padding: 2rem;
+    font-size: 2em;
+    padding: 0.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -165,8 +180,8 @@ hr.light-100 {
     font-size: 200%;
   } 
   .social a {
-    font-size: 2.5em;
-    padding: 1.2 rem;
+    font-size: 1.5em;
+    padding: .5rem;
   }
   .card-img-top {
     width: 60%;
@@ -210,6 +225,13 @@ hr.light-100 {
   }
   
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 750px)  {
+  .gif {
+    width: 100%;
+    height: 19vw;
+  }
+}
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
@@ -234,8 +256,9 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('img/background-image.jpg');
   position: fixed;
+  opacity: 0.8;
   display: block;
   top: 0;
   left: 0;

@@ -1,8 +1,4 @@
-body {
-    background-color: #650BA1;
-}
 
-/* Add a background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: rgb(0, 200, 255);
@@ -12,9 +8,8 @@ body {
     border-bottom: 1px solid white;
 }
 
-@media screen and (min-width: 1000px) {
-    .navbar {
-        height: 70px;
-    }
+.navbar-brand img {
+    max-height: 45px;
 }
+
 
