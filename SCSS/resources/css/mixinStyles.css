@@ -21,19 +21,7 @@
   border-color: #0059b3;
 }
 
-/* @media all and (max-width: 30em) {
-  .button {
-    display: block;
-    margin: 0.2em auto;
-  }
-} */
-
 .buttonMixin {
-  background-color: yellow;
-  color: purple;
-}
-
-.buttonMixin:hover {
   background-color: yellow;
   color: purple;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+    <div class="game-container">  
+        <div class="game-info">   
+            <h1>Tic Tac Toe</h1>
+            <p id="names">Whose turn: playerX</p>
+            <p id="winner">Winner:</p>
+        </div>
+        
+        <div class="container">
+            <div id="1" class="tile" onclick="updateBoard(1)"></div>
+            <div id="2" class="tile" onclick="updateBoard(2)"></div>
+            <div id="3" class="tile" onclick="updateBoard(3)"></div>
+            <div id="4" class="tile" onclick="updateBoard(4)"></div>
+            <div id="5" class="tile" onclick="updateBoard(5)"></div>
+            <div id="6" class="tile" onclick="updateBoard(6)"></div>
+            <div id="7" class="tile" onclick="updateBoard(7)"></div>
+            <div id="8" class="tile" onclick="updateBoard(8)"></div>
+            <div id="9" class="tile" onclick="updateBoard(9)"></div>
+
+            <button class="reset-button" type="button" onclick="resetBoard()">Reset Board</button>
+
+        </div>
+
+    </div>
+
+    <!-- ul>li.item$*5 -->
+    
+
+
+    <script src="tictac.js"></script>
+</body>
+</html>
