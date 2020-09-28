@@ -36,8 +36,8 @@ function updateBoard(tileNr) {
             document.getElementById(winningConditions[i][2]).innerText === currentTurn) {
             gameOver = true;
 
-            currentTurn === player1.id ? document.getElementById("winner").innerText = `Winner: ${player1.name}` :
-                document.getElementById("winner").innerText = `Winner: ${player2.name}`;
+            currentTurn === player1.id ? document.getElementById("winner").innerText = `Winner: ${player1.name}!` :
+                document.getElementById("winner").innerText = `Winner: ${player2.name}!`;
 
         }
     }
