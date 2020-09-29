@@ -67,6 +67,81 @@ finalNumber += .5 //30.5
 
 console.log(Math.floor(finalNumber));
 
+// second day
+var someNumbers = [1, 2, 3, 4, 5];
+for(var number of someNumbers) {
+    console.log(number);
+}
+
+var numberArray = [4, 9, 16, 25];
+var x = numberArray.map(Math.sqrt);
+console.log(x);
+
+var arrowNumbers = [2, 4, 6, 8];
+
+// arrow function
+arrowNumbers.map(n => {
+    console.log(n);
+});
+
+let text = "learningJS";
+console.log(text.charAt(4));
+console.log(text.substr(1,4));
+console.log(text.replace("JS", " Python"));
+
+// continuing
+let stringWorld = "The world is ";
+let stringYours = "yours!";
+console.log(stringWorld + stringYours);
+
+numberString = "3";
+numberThree = 3;
+let combinedText = numberString + " " + numberThree;
+console.log(combinedText);
+console.log(typeof numberString);
+
+// An important argument for single quotes is when you need to write html inside JavaScript:
+let html = '<div id="singleQuote"></div>';
+
+let moreText = "This is more text ";
+moreText += "and it just continues";
+console.log(moreText);
+// could also concatenate it with the plus sign
+let firstArray = [
+    "Peanut butter and",
+    "Jelly"
+]
+
+let secondArray = [
+    "Is an awesome",
+    "Sandwich"
+]
+
+let CombinedArray = firstArray.concat(secondArray);
+console.log(CombinedArray);
+
+let arraySlice = secondArray.slice(1);
+console.log(arraySlice);
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1, 3);
+console.log(citrus);
+
+var wrongGrammar = "Ik wordt coureur";
+var rightGrammar = wrongGrammar.split("t");                                        
+console.log(rightGrammar);
+
+var str = "Let us try and use the split method method method!";
+var res = str.split(" ", 8); // split words from eight on
+console.log(res);
+
+// moving to another file, this one has become congested!
+
+
+
+
+
+
 
 
 

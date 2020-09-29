@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>JS Practice</title>
 </head>
 <body>
 
-    <h1>Javascript</h1>
-    
+    <h1>Javascript can validate your input</h1>
+    <h3>Several conditions</h3>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Submit</button>
 
-    <script src="main.js"></script>
+    <div style="width: 200px; height: 100px; margin-top: 10px;">
+        <span id="label">Output: </span>
+    </div>
+
+    <!-- // second validation -->
+    <h3>If number is not equal to 3 then reset input field</h3>
+    <input type="number" name="number" id="second-number">
+    <button id="btn" onclick="checkNumberTwo()">Submit</button>
+
+    <div style="width: 200px; height: 100px; margin-top: 10px;">
+        <span id="label-two">Output: </span>
+    </div>
+
+    <!-- // third validation -->
+    <h3>Number between 5 and 10 (5 and 10 included)</h3>
+    <p>May be your number is between 13 and 23</p>
+    <input type="number" name="number" id="third-number">
+    <button id="btn" onclick="checkNumberThree()">Submit</button>
+
+    <div style="width: 200px; height: 100px; margin-top: 10px;">
+        <span id="label-three">Output: </span>
+    </div>
+
+    <!-- // fourth validation -->
+    <h3>Is the number exactly equal to 21 or 23</h3>
+    <p>May be your number is between 30 and 35 or between 40 and 45</p>
+    <input type="number" name="number" id="fourth-number">
+    <button id="btn" onclick="checkNumberFour()">Submit</button>
+
+    <div style="width: 200px; height: 100px; margin-top: 10px;">
+        <span id="label-four">Output: </span>
+    </div>
+
+
+    <script src="conditions.js"></script>
 </body>
 </html>

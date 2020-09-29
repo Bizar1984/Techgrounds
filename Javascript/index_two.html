@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Months and more</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <h2>Show months</h2>
+    <input type="number" name="number" id="number" min="1" max="12">
+    <button onclick="translateMonth()">translate</button>
+
+    <div id="translatedMonth" style="width: 180px; height: 200px; border: 1px solid orange; margin-top: 20px; padding: 10px;"></div>
+
+    
+   
+    <!-- another example -->
+    <h3>Show months and validate input</h3>
+    <div style="width: 250px; height: 200px; border: 1px solid teal; margin-top: 20px; padding: 10px;">
+        
+        <input type="number" id="month-user-input" min="1" max="12">
+        <button id="btn-get-month" onclick="getMonth(document.getElementById('month-user-input').value)">check</button>
+        <p id="result">Waiting for user input</p>
+        
+    </div>
+    
+
+    <script src="months_and_more.js"></script>
+    
+</body>
+</html>
