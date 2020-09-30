@@ -1,4 +1,4 @@
-var monthsArray = [
+let monthsArray = [
     "January",
     "February",
     "March",
@@ -14,7 +14,7 @@ var monthsArray = [
 ];
 
 function translateMonth() {
-    var value, months;
+    let value, months;
 
     value = document.getElementById("number").value;
     months = monthsArray[value -1]

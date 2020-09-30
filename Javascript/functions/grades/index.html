@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+</head>
+<body>
+
+    <style>
+        .math-container, .physics-container, .average-container {
+            border: 1px solid black;
+            padding: 0.3em;
+            max-width: 20%;
+            background-color: orange;
+        }
+        .row {
+        display: flex;
+        
+        }
+
+        .column {
+        flex: 50%;
+        padding: .2em;
+        }
+    </style>
+
+    <div class="math-container">
+        <h3>Mathmatics</h3>  
+    <div class="row">
+        <div class="column">Name</div>
+        
+        <div class="column">Grade</div>
+    </div>
+    <div class="row">
+        <div class="column">Tony</div>
+        <input type="number" class="tony-math column" id="tony-math">
+    </div>
+
+    <div class="row">
+        <div class="column">Samantha</div>
+        <input type="number" class="math-grade-two column" id="grades">
+    </div>
+    <div class="row">
+        <div class="column">Ellen</div>
+        <input type="number" class="math-grade-three column" id="grades">
+    </div>
+    <div class="row">
+        <div class="column">Martin</div>
+        <input type="number" class="math-grade-four column" id="grades">
+    </div>
+    <div class="row">
+        <div class="column">Lassoe</div>
+        <input type="number" class="math-grade-five column" id="grades">
+    </div>
+    <div class="row">
+        <div class="column">Bert</div>
+        <input type="number" class="math-grade-six column" id="grades">
+    </div>
+
+    </div>
+
+    <button type="button" onclick="checkMathGrade()" style="padding: .5em; margin: 5px;">Check Tony</button>
+
+    <!-- physics container -->
+    <div class="physics-container">
+        <h3>Physics</h3>
+        <div class="row">
+            <div class="column">Name</div>
+
+            <div class="column">Grade</div>
+        </div>
+        <div class="row">
+            <div class="column">Tony</div>
+            <input type="number" class="tony-physics column" id="tony-physics">
+        </div>
+
+        <div class="row">
+            <div class="column">Samantha</div>
+            <input type="number" class="math-grade-two column" id="grades">
+        </div>
+        <div class="row">
+            <div class="column">Ellen</div>
+            <input type="number" class="math-grade-three column" id="grades">
+        </div>
+        <div class="row">
+            <div class="column">Martin</div>
+            <input type="number" class="math-grade-four column" id="grades">
+        </div>
+        <div class="row">
+            <div class="column">Lassoe</div>
+            <input type="number" class="math-grade-five column" id="grades">
+        </div>
+        <div class="row">
+            <div class="column">Bert</div>
+            <input type="number" class="math-grade-six column" id="grades">
+        </div>
+
+    </div>
+
+    <button type="button" onclick="checkPhysicsGrade()" style="padding: .5em; margin: 5px;">Check Tony</button>
+
+
+
+
+    <!-- averages -->
+    <div class="average-container">
+        <h3>Average Beta</h3>
+        <div class="row">
+            <div class="column">Name</div>
+
+            <div class="column">Grade</div>
+        </div>
+        <div class="row">
+            <div class="column">Tony</div>
+            <p id="tony-beta-average" class="tony-beta-average" style="margin-top: 0px; margin-bottom: 0px; background-color: lightgray; width: 50%; height: 20px; border: 1px solid white;"></p>
+        </div>
+
+    </div>
+
+    <button type="button" onclick="getAverage()" style="padding: .5em; margin: 5px;">Tony's Average</button>
+
+    
+    <script src="grades.js"></script>
+    
+</body>
+</html>
+
