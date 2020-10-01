@@ -18,7 +18,7 @@ function checkMathGrade() {
     let result_two = document.querySelector(".math-result-samantha");
 
     if (value >= 5.5 && value <= 7.5) {
-        result.style.backgroundColor = "green";
+        result_two.style.backgroundColor = "green";
     } else if (value >= 7.5 && value <= 10) {
         result_two.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
     } else if(value < 5.5 && value >= 1) {
