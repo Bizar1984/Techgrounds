@@ -39,8 +39,8 @@ function checkNames() {
 
     input = document.getElementById("nameInput").value;
 
-    if(input.includes(namesArray[0]) || input.includes(namesArray[1]) || input.includes(namesArray[2]) || input.includes(namesArray[3]) || input.includes(namesArray[2])) {
-        document.getElementById("checkNames").innerHTML = "Dat is een bekende van ons";
+    if (input.includes(namesArray[0]) || input.includes(namesArray[1]) || input.includes(namesArray[2]) || input.includes(namesArray[3]) || input.includes(namesArray[2])) {
+    document.getElementById("checkNames").innerHTML = "Dat is een bekende van ons";
 
     } else {
         document.getElementById("checkNames").innerHTML = "Onbekend in ons systeem!";
@@ -54,10 +54,10 @@ let namesArrayTwo = ['Bombadil', 'Benazir', 'Dijksoorn', 'John', 'Olly', 'Mo', '
 function checkNamesTwo() {
 
     if (namesArrayTwo.indexOf($("input.nameInputTwo").val()) > -1) {
-
+        
         document.getElementById("checkNamesTwo").innerHTML = "Bevoegd!";
-
-    } else {
+        
+        } else {
         document.getElementById("checkNamesTwo").innerHTML = "Persoon onbevoegd. Verlies hem/haar niet uit het oog!";
     }
 }
@@ -76,5 +76,28 @@ generateRandomNameTwo = () => {
 
     let shuffle = Math.floor(Math.random() * namesArray.length);
     document.getElementById("random-name").innerHTML = namesArrayTwo[shuffle];
-
+    
 }
+
+
+
+
+ 
+
+
+
+
+   
+    
+
+    
+
+
+
+
+
+
+
+
+
+

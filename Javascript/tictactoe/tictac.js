@@ -64,14 +64,5 @@ function resetBoard() {
     
 }
 
-let myArray = [
-    [1, 2, 3],
-    [8, 9, 10]
-]
-
-for(let i = 0; i < myArray.length; i++) {
-    console.log(myArray[i][2]);
-}
-
 
 

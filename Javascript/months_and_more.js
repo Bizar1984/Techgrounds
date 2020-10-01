@@ -19,9 +19,11 @@ function translateMonth() {
     value = document.getElementById("number").value;
     months = monthsArray[value -1]
     
+    for(i = 0; i < monthsArray.length ; i++) {
+
+    }
     document.getElementById("translatedMonth").innerHTML = months;
 }
-    
 
 // yesssss
 

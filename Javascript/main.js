@@ -70,47 +70,35 @@ console.log(Math.floor(finalNumber));
 // second day
 var someNumbers = [1, 2, 3, 4, 5];
 for(var number of someNumbers) {
-    // console.log(number);
+    console.log(number);
 }
 
-var flunkedArray = [];
 var numberArray = [4, 9, 16, 25];
-
-
-function moveToFlunked() {
-    for(i = 0; i < numberArray.length; i++)
-    console.log(i);
-
-    if (i < 10) {
-        flunkedArray.push(i);
-    }
-}
-
-moveToFlunked();
-console.log(flunkedArray);
+var x = numberArray.map(Math.sqrt);
+console.log(x);
 
 var arrowNumbers = [2, 4, 6, 8];
 
 // arrow function
 arrowNumbers.map(n => {
-    // console.log(n);
+    console.log(n);
 });
 
 let text = "learningJS";
-// console.log(text.charAt(4));
-// console.log(text.substr(1,4));
-// console.log(text.replace("JS", " Python"));
+console.log(text.charAt(4));
+console.log(text.substr(1,4));
+console.log(text.replace("JS", " Python"));
 
 // continuing
 let stringWorld = "The world is ";
 let stringYours = "yours!";
-// console.log(stringWorld + stringYours);
+console.log(stringWorld + stringYours);
 
 numberString = "3";
 numberThree = 3;
 let combinedText = numberString + " " + numberThree;
-// console.log(combinedText);
-// console.log(typeof numberString);
+console.log(combinedText);
+console.log(typeof numberString);
 
 // An important argument for single quotes is when you need to write html inside JavaScript:
 let html = '<div id="singleQuote"></div>';
