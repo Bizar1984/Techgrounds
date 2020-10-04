@@ -75,6 +75,12 @@ function generateRandomName() {
 generateRandomNameTwo = () => {
 
     let shuffle = Math.floor(Math.random() * namesArray.length);
+    console.log(namesArrayTwo[shuffle]);
     document.getElementById("random-name").innerHTML = namesArrayTwo[shuffle];
-
 }
+
+generateRandomNameTwo();
+
+
+
+
