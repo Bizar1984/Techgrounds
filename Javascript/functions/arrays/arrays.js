@@ -14,7 +14,7 @@ let numberArray = [
 let remainderNumberArray = numberArray[4] % numberArray[0];
 
 // numberArray.length = 9
-// 100 / 12 = 8
+// 100 / 12 = 8. Remainder = 4
 
 // console.log(numberArray);
 
@@ -48,11 +48,11 @@ console.log(fruits);
 // with the slice method you can slice part of the array
 // last parameter is not inclded
 let arraySliced = fruits.slice(0, 3);
-console.log(arraySliced)
+// console.log(arraySliced)
 // the splice method changes the original array. Add new items at position 2 and remove none
 // if you choose to remove an item, the one next to the last added will be removed
 let arraySpliced = fruits.splice(2, 0, "lemon", "kiwi");
-console.log(fruits)
+// console.log(fruits)
 // finally the sort method. This sorts items in alphabetic order
 let sortedFruitArray = fruits.sort();
 console.log(fruits);
@@ -74,21 +74,21 @@ console.log(sortingNumbersArray[0]);
 
 // sort in ascending order
 sortingNumbersArray.sort(function(a, b){return a-b});
-console.log(sortingNumbersArray);
+// console.log(sortingNumbersArray);
 
 // sort in descending order
 sortingNumbersArray.sort(function(a, b){return b-a});
-console.log(sortingNumbersArray);
+// console.log(sortingNumbersArray);
 
 // change the value of the first index in the array
 fruits[1] = "dates";
 
 // finally lets swap two items in the array. Let's swap the order of pineapple and raspberry [4] and [5]
 [fruits[4], fruits[5]] = [fruits[5], fruits[4]];
-console.log(fruits)
+// console.log(fruits)
 
 
-// sorting algorithm. Let's try and analyse this later
+// sorting algorithm. Let's leave this one for when i'm smarter
 function mergeAndSort(a1, a2) {
   var matchCount = 0;
   var ret = [];
