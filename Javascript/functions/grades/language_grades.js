@@ -1,32 +1,31 @@
+function checkGrade(grade, element) {
+    if (grade >= 5.5 && grade <= 7.5) {
+        element.style.backgroundColor = "green";
+    } else if (grade >= 7.5 && grade <= 10) {
+        element.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
+    } else if (grade < 5.5 && grade >= 1) {
+        element.style.backgroundColor = "red";
+    } else if (grade > 10 || grade < 1) {
+        element.style.backgroundColor = "darkgrey";
+    }
+}
+
+// dutch grade
 function checkDutchGrade() {
 
     let input_dutch = document.getElementById("dutch-grades-benazir").value;
     let result = document.querySelector(".dutch-result-benazir");
 
-    if (input_dutch >= 5.5 && input_dutch <= 7.5) {
-        result.style.backgroundColor = "green";
-    } else if (input_dutch >= 7.5 && input_dutch <= 10) {
-        result.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (input_dutch < 5.5 && input_dutch >= 1) {
-        result.style.backgroundColor = "red";
-    } else if (input_dutch > 10 || input_dutch < 1) {
-        result.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(input_dutch, result);
 
     // second run
     let value = document.getElementById("dutch-grades-samantha").value;
     let result_two = document.querySelector(".dutch-result-samantha");
 
-    if (value >= 5.5 && value <= 7.5) {
-        result_two.style.backgroundColor = "green";
-    } else if (value >= 7.5 && value <= 10) {
-        result_two.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (value < 5.5 && value >= 1) {
-        result_two.style.backgroundColor = "red";
-    } else if (value > 10 || value < 1) {
-        result_two.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(value, result_two);
 }
+
+
 
 // english grade
 function checkEnglishGrade() {
@@ -37,16 +36,7 @@ function checkEnglishGrade() {
     // second run, samantha english grades
     let value = document.getElementById("english-grades-samantha").value;
     let result_two = document.querySelector(".english-result-samantha");
-
-    if (value >= 5.5 && value <= 7.5) {
-        result_two.style.backgroundColor = "green";
-    } else if (value >= 7.5 && value <= 10) {
-        result_two.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (value < 5.5 && value >= 1) {
-        result_two.style.backgroundColor = "red";
-    } else if (value > 10 || value < 1) {
-        result_two.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(value, result_two);
 }
 
 function setBackground() {
@@ -54,15 +44,7 @@ function setBackground() {
     let input_english = document.getElementById("english-grades-benazir").value;
     let result_english = document.querySelector(".english-result-benazir");
 
-    if (input_english >= 5.5 && input_english <= 7.5) {
-        result_english.style.backgroundColor = "green";
-    } else if (input_english >= 7.5 && input_english <= 10) {
-        result_english.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (input_english < 5.5 && input_english >= 1) {
-        result_english.style.backgroundColor = "red";
-    } else if (input_english > 10 || input_english < 1) {
-        result_english.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(input_english, result_english);
 }
 
 
@@ -78,15 +60,7 @@ function getLanguageAverage() {
 
     let final_language = document.querySelector(".benazir-language-average");
 
-    if (average_language >= 5.5 && average_language <= 7.5) {
-        final_language.style.backgroundColor = "green";
-    } else if (average_language >= 7.5 && average_language <= 10) {
-        final_language.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (average_language < 5.5 && average_language >= 1) {
-        final_language.style.backgroundColor = "red";
-    } else if (average_language > 10 || average_language < 1) {
-        final_language.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(average_language, final_language);
 
     document.getElementById("benazir-language-average").innerHTML = average_language;
 
@@ -101,15 +75,7 @@ function getLanguageAverage() {
 
     let final_language_sam = document.querySelector(".samantha-language-average");
 
-    if (average_language_sam >= 5.5 && average_language_sam <= 7.5) {
-        final_language_sam.style.backgroundColor = "green";
-    } else if (average_language_sam >= 7.5 && average_language_sam <= 10) {
-        final_language_sam.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (average_language_sam < 5.5 && average_language_sam >= 1) {
-        final_language_sam.style.backgroundColor = "red";
-    } else if (average_language_sam > 10 || average_language_sam < 1) {
-        final_language_sam.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(average_language_sam, final_language_sam);
 
     document.getElementById("samantha-language-average").innerHTML = average_language_sam;
 
@@ -135,18 +101,11 @@ function getOverallAverage() {
 
     let average_language = (english_grade_parsed + dutch_grade_parsed) / 2;
     let overall_average_benazir = (average_language + average_beta) / 2;
-    console.log(overall_average_benazir);
+    
     final_result_benazir = document.getElementById("benazir-overall-average");
 
-    if (overall_average_benazir >= 5.5 && overall_average_benazir <= 7.5) {
-        final_result_benazir.style.backgroundColor = "#33691e";
-    } else if (overall_average_benazir >= 7.5 && overall_average_benazir <= 10) {
-        final_result_benazir.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (overall_average_benazir < 5.5 && overall_average_benazir >= 1) {
-        final_result_benazir.style.backgroundColor = "red";
-    } else if (overall_average_benazir > 10 || overall_average_benazir < 1) {
-        final_result_benazir.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(overall_average_benazir, final_result_benazir);
+
     final_result_benazir.innerHTML = overall_average_benazir;
 
     // zelfde trucje maar dan voor samantha.. oh my goddddd this is some bad coding
@@ -171,15 +130,7 @@ function getOverallAverage() {
     console.log(overall_average_samantha);
     final_result_samantha = document.getElementById("samantha-overall-average");
 
-    if (overall_average_samantha >= 5.5 && overall_average_samantha <= 7.5) {
-        final_result_samantha.style.backgroundColor = "#33691e";
-    } else if (overall_average_samantha >= 7.5 && overall_average_samantha <= 10) {
-        final_result_samantha.style.backgroundColor = "rgba(156, 204, 101, 0.6)";
-    } else if (overall_average_samantha < 5.5 && overall_average_samantha >= 1) {
-        final_result_samantha.style.backgroundColor = "red";
-    } else if (overall_average_samantha > 10 || overall_average_samantha < 1) {
-        final_result_samantha.style.backgroundColor = "darkgrey";
-    }
+    checkGrade(overall_average_samantha, final_result_samantha)
     final_result_samantha.innerHTML = overall_average_samantha;
 
 
