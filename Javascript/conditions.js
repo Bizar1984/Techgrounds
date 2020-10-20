@@ -77,6 +77,8 @@ function checkNumberFour() {
     document.getElementById("label-four").innerHTML = text;
 }
 
+console.log(0.1 + 0.2);
+
 
 
     
