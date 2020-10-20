@@ -22,20 +22,28 @@ class Calculator {
     }
 
     appendNumber(number) {
+        // if number starts with . or it's included in the currentOperand, return
+        // don't allow for more dots when the if statement is true
         if (number === '.' && this.currentOperand.includes('.')) return
         this.currentOperand = this.currentOperand.toString() + number.toString();
+        
+        // number is the single number pressed, this.currentOperand the entire STRING
 
 
     }
 
     chooseOperation(operation) {
+        // blocking further operations after one is selected
         if (this.currentOperand === '') return
-        // check if the previous operand already existed aloowing for multiple calculations
+        
+        // check if the previous operand already existed allowing for multiple calculations
         if (this.previousOperand != '') {
             this.compute()
         }
         this.operation = operation;
+        // AFTER selected an operator (+, -, *, /) currentOperand is assigned to previousOperand
         this.previousOperand = this.currentOperand
+        // currentOperand reset
         this.currentOperand = ''
 
 
@@ -45,7 +53,10 @@ class Calculator {
         let computation
         const prev = parseFloat(this.previousOperand)
         const current = parseFloat(this.currentOperand)
+        
+         // don't compute anything without having two numbers
         if (isNaN(prev) || isNaN(current)) return
+        
         switch (this.operation) {
             case '+':
                 computation = prev + current
@@ -62,9 +73,12 @@ class Calculator {
             default:
                 return
         }
+
+        // AFTER an answer is computed readyToReset becomes true
         this.readyToReset = true;
-        console.log(computation);
+        // AFTER an answer is computed the result (computation) is assigned to currentOperand
         this.currentOperand = computation
+        // getting ready for NEW input
         this.previousOperand = ''
         this.operation = undefined
 
