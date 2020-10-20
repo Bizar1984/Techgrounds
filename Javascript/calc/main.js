@@ -3,6 +3,7 @@ class Calculator {
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
         this.readyToReset = false;
+        
         this.clear()
     }
 
@@ -10,15 +11,14 @@ class Calculator {
         this.currentOperand = ''
         this.previousOperand = ''
         this.operation = undefined
-
+        
     }
 
 
     delete() {
         // chopping off the last character
         this.currentOperand = this.currentOperand.toString().slice(0, -1)
-
-
+        
     }
 
     appendNumber(number) {
@@ -63,6 +63,7 @@ class Calculator {
                 return
         }
         this.readyToReset = true;
+        console.log(computation);
         this.currentOperand = computation
         this.previousOperand = ''
         this.operation = undefined
