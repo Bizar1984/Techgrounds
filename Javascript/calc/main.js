@@ -1,3 +1,18 @@
+const startGame = () => {
+    const playBtn = document.querySelector(".intro button");
+    const introScreen = document.querySelector(".intro");
+    const calculator = document.querySelector(".calculator-grid");
+
+    playBtn.addEventListener("click", () => {
+      introScreen.classList.add("fadeOut");
+      calculator.classList.add("fadeIn");
+    });
+  };
+
+  startGame();
+
+
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
@@ -220,3 +235,14 @@ plusMinusButton.addEventListener('click', button => {
     calculator.addNegative(button.innerText)
     calculator.updateDisplay()
 })
+
+let today = new Date();
+
+let date = today.getFullYear()+'-'+ today.getDate() +'-'+ (today.getMonth()+1)
+
+
+let time = today.getHours() + ":" + today.getMinutes();
+
+let dateTime = date+' '+time;
+
+document.getElementById("display-date").innerHTML = dateTime;
